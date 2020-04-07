@@ -1,13 +1,13 @@
 $('#addTodo').click(function(){
-    // $('#receipeList').append($('<li>', {
-    //     text: $('#clear').val()
-    // }))
-    // $('#clear').val(" ");
+    $('#receipeList').append($('<li>', {
+        text: $('#clear').val()
+    }))
+    $('#clear').val(" ");
 
-    let element = $('<li>');
+    // let element = $('<li>');
 
-    let input = $('#clear').val();
-    $('#receipeList').append(element, input);
+    // let input = $('#clear').val();
+    // $('#receipeList').append(element, input);
     // console.log(input);
     // console.log($(input).html('li'));
     // console.log($('#receipeList').append().html(input));
