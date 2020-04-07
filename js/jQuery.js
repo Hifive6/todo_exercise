@@ -4,6 +4,8 @@ $('#addTodo').click(function(){
     }))
     $('#clear').val(" ");
 
+    removeItem();
+
     // let element = $('<li>');
 
     // let input = $('#clear').val();
@@ -15,3 +17,11 @@ $('#addTodo').click(function(){
     // input.append($('#receipList'));
     // $('#receiptList').after(input);
 })
+
+function removeItem(){
+$('li').click(function(){
+    this.remove();
+})
+}
+removeItem();
+    // console.log(e.target);
